@@ -101,6 +101,8 @@ Year of Birth,Gender,Ethnicity,Child's First Name,Count,Rank
 2016,FEMALE,ASIAN AND PACIFIC ISLANDER,Isabella,56,8
 bob@dylan:~$  
 bob@dylan:~$  cat 1-main.py
+```
+```
 #!/usr/bin/env python3
 """
 Main file
@@ -129,7 +131,8 @@ except AssertionError:
 print(server.get_page(1, 3))
 print(server.get_page(3, 2))
 print(server.get_page(3000, 100))
-
+```
+```
 bob@dylan:~$ 
 bob@dylan:~$ ./1-main.py
 AssertionError raised with negative values
@@ -203,6 +206,8 @@ bob@dylan:~$
 
   ```
   bob@dylan:~$ cat 3-main.py
+  ```
+```  
 #!/usr/bin/env python3
 """
 Main file
@@ -240,8 +245,10 @@ print("Nb items: {}".format(len(server._Server__indexed_dataset)))
 print(server.get_hyper_index(index, page_size))
 
 # 5- request again initial next index -> same data page as the request 2-
-print(server.get_hyper_index(res.get('next_index'), page_size))
+print(server.get_hyper_index(res.get('next_index'), page_size))```
+```
 
+```
 bob@dylan:~$
 bob@dylan:~$ ./3-main.py
 AssertionError raised when out of range
