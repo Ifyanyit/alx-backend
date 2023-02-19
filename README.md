@@ -36,7 +36,7 @@ bob@dylan:~$ ./0-main.py
 bob@dylan:~$
 
 ```
-
+---
 1. **Simple pagination**<br/>[1-simple_pagination.py](1-simple_pagination.py) contains a Python script that meets the following requirements:
   + Copy `index_range` from the previous task and the following class into your code.
     ```python
@@ -72,7 +72,7 @@ bob@dylan:~$
     + Use `assert` to verify that both arguments are integers greater than 0.
     + Use `index_range` to find the correct indexes to paginate the dataset correctly and return the appropriate page of the dataset (i.e. the correct list of rows).
     + If the input arguments are out of range for the dataset, an empty list should be returned.
-
+---
 2. **Hypermedia pagination**<br/>[2-hypermedia_pagination.py](2-hypermedia_pagination.py) contains a Python script that meets the following requirements:
   + Replicate code from the previous task.
   + Implement a `get_hyper` method that takes the same arguments (and defaults) as `get_page` and returns a dictionary containing the following key-value pairs:
@@ -102,7 +102,7 @@ Year of Birth,Gender,Ethnicity,Child's First Name,Count,Rank
 bob@dylan:~$  
 bob@dylan:~$  cat 1-main.py
 ```
-	```python
+```python
 	#!/usr/bin/env python3
 	"""
 	Main file
@@ -131,7 +131,7 @@ bob@dylan:~$  cat 1-main.py
 	print(server.get_page(1, 3))
 	print(server.get_page(3, 2))
 	print(server.get_page(3000, 100))
-	```
+```
 ```
 bob@dylan:~$ 
 bob@dylan:~$ ./1-main.py
@@ -144,7 +144,7 @@ AssertionError raised when page and/or page_size are not ints
 bob@dylan:~$ 
 ```
 
-
+---
 3. **Deletion-resilient hypermedia pagination**<br/>[3-hypermedia_del_pagination.py](3-hypermedia_del_pagination.py) contains a Python script that meets the following requirements:
   + The goal here is that if between two queries, certain rows are removed from the dataset, the user does not miss items from dataset when changing page.
   + Start [3-hypermedia_del_pagination.py](3-hypermedia_del_pagination.py) with this code:
