@@ -102,7 +102,7 @@ Year of Birth,Gender,Ethnicity,Child's First Name,Count,Rank
 bob@dylan:~$  
 bob@dylan:~$  cat 1-main.py
 ```
-	```
+	```python
 	#!/usr/bin/env python3
 	"""
 	Main file
@@ -207,7 +207,7 @@ bob@dylan:~$
   ```
   bob@dylan:~$ cat 3-main.py
   ```
-```  
+```python
 #!/usr/bin/env python3
 """
 Main file
